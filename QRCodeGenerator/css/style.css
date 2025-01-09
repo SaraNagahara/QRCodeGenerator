@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+/*Page to insert your link */
+
+body{
+    background-image: url('../resources/qa-bg.jpg');
+    height: 100%;
+    background-size: cover; 
+    background-position: center;
+    margin: 0;
+   
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+
+section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh; 
+}
+
+#URL-Input{
+    background-color: #030616;
+    border: 1px solid #263FA9;
+    padding: 15px 30px; 
+    border-radius: 15px; 
+    width: 100%;
+    margin-left: 22%;
+}
+
+#URL-Input::placeholder{
+    color: #FAFAF9;
+}
+
+#URL-Input:focus {
+    outline: none;
+    border-color: #3A5CD6; 
+    color: #FAFAF9;
+}
+
+#submit-button{
+    background-color: #263FA9;
+    color: #FAFAF9;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 23px;
+    margin: 4px 5px 4px 5px;
+   
+}
+
+form{
+    display: flex;
+   
+}
+
+/*Begining of the QR code page */
+
+.section-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+    width: 20%;
+}
+
+button{
+    background-color: #263FA9;
+    color: #FAFAF9;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8%;
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+}
+
+
