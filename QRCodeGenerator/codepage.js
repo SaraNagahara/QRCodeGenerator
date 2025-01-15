@@ -1,6 +1,9 @@
+//Carregamento do localstorage
 window.addEventListener('load', () => {
+    //puxar a qrCodeUrl que foi armazenada anteriormente
     const qrCodeUrl = localStorage.getItem('qrCodeUrl');
     if (qrCodeUrl) {
+        //Aqui o elemento com id QRcodeImage vai receber o src de valor da variável qrCodeUrl
         document.getElementById('QRcodeImage').src = qrCodeUrl;
     }
 });
@@ -9,7 +12,7 @@ window.addEventListener('load', () => {
 
 
 
-   // Função para baixar o código QR
+   // Função para baixar o código QR Code
    document.getElementById('download-button').addEventListener('click', () => {
     const qrCodeImage = document.getElementById('QRcodeImage');
     const link = document.createElement('a');
@@ -19,7 +22,7 @@ window.addEventListener('load', () => {
 });
 
 
-
+    //Função para copiar a url colocada no index
 document.getElementById('share-button').addEventListener('click', () => {
     const url = localStorage.getItem("URLCopy");
     navigator.clipboard.writeText(url) // Copia para a área de transferência
