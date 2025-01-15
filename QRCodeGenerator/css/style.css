@@ -92,6 +92,20 @@ button{
 
 }
 
+#mycircle {
+    margin-top: 10%;
+    width: 20%;            
+    height: 100%;            
+    background-color: #F8FAFC1A; 
+    border-radius: 50%;       
+}
+
+#QRcodeImage{
+    margin-left: 20%;
+    margin-top: 13%;
+    border-radius: 5%;
+}
+
 
 
 
