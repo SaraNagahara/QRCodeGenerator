@@ -9,7 +9,6 @@ body{
     background-size: cover; 
     background-position: center;
     margin: 0;
-   
 }
 
 html, body {
@@ -53,7 +52,13 @@ section{
     border-radius: 8px;
     padding: 10px 23px;
     margin: 4px 5px 4px 5px;
-   
+    font-size: 0.90rem;
+    text-align: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    cursor: pointer;
 }
 
 form{
@@ -75,10 +80,19 @@ button{
     color: #FAFAF9;
     border: none;
     padding: 10px 10px 10px 10px;
-    border-radius: 8%;
     width: 100%;
-    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
     text-align: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
 }
+
+
+
 
 
