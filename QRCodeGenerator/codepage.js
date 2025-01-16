@@ -22,16 +22,19 @@ window.addEventListener('load', () => {
 });
 
 
-    //Função para copiar a url colocada no index
+    //Função para copiar a url para compartilhar o qr code
 document.getElementById('share-button').addEventListener('click', () => {
-    const url = localStorage.getItem("URLCopy");
-    navigator.clipboard.writeText(url) // Copia para a área de transferência
+
+    // Copiar o texto selecionado para a área de transferência
+    navigator.clipboard.writeText(window.location.href)
         .then(() => {
-            alert('URL copiada para a área de transferência!');
+            alert('URL copiada com sucesso!');
         })
         .catch(err => {
-            console.error('Erro ao copiar a URL:', err);
+            alert('Falha ao copiar a URL: ' + err);
         });
 });
+
+
 
 

@@ -7,9 +7,6 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
     //Cria o QR Code baseado no valor do text
     QRCode.toDataURL(text.value).then(dataURL => {
-        // aqui vai salvar a url colocada na index.html no localstorage pro funcionamento do botão share
-        localStorage.setItem("URLCopy", text.value);
-
         // Salva o QR Code na localStorage para acessar na codepage
         localStorage.setItem('qrCodeUrl', dataURL);
 
