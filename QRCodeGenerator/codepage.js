@@ -8,10 +8,6 @@ window.addEventListener('load', () => {
     }
 });
 
-
-
-
-
    // Função para baixar o código QR Code
    document.getElementById('download-button').addEventListener('click', () => {
     const qrCodeImage = document.getElementById('QRcodeImage');
